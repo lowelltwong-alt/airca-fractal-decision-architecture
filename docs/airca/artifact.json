@@ -5,20 +5,22 @@
   "concept": "AIRCA",
   "status": "draft",
   "version": "0.1.0",
-  "author": "Lowell Wong",
+  "author": "Lowell T. Wong",
   "attribution": {
     "collaborative_emergence": true,
     "collaborators": [
       "Alex A.",
-      "Lowell Wong"
+      "Lowell T. Wong"
     ],
-    "repository_extension_by": "Lowell Wong"
+    "repository_extension_by": "Lowell T. Wong",
+    "uairca_extension_by": "Lowell T. Wong"
   },
   "scope": [
     "AI-era adaptation of RACI",
     "decision architecture",
     "human judgment under AI-assisted overload",
-    "decision spine across levels"
+    "decision spine across levels",
+    "UAIRCA ultimate-frame extension"
   ],
   "related_concepts": [
     "fractal taxonomy",
