@@ -1,0 +1,22 @@
+{
+  "title": "Fractal Ontology",
+  "node_type": "concept_node",
+  "parent": "docs",
+  "concept": "fractal ontology",
+  "status": "draft",
+  "version": "0.1.0",
+  "author": "Lowell T. Wong",
+  "scope": [
+    "recursive relationship logic",
+    "semantic continuity across levels",
+    "dependency structures",
+    "context-preserving meaning"
+  ],
+  "related_concepts": [
+    "fractal taxonomy",
+    "fractal decision-making",
+    "machine-readable artifact design",
+    "knowledge graphs",
+    "semantic networks"
+  ]
+}
