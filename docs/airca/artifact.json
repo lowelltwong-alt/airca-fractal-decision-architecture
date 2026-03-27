@@ -13,20 +13,26 @@
       "Lowell T. Wong"
     ],
     "repository_extension_by": "Lowell T. Wong",
-    "uairca_extension_by": "Lowell T. Wong"
+    "uairca_extension_by": "Lowell T. Wong",
+    "lairca_extension_by": "Lowell T. Wong"
   },
   "scope": [
     "AI-era adaptation of RACI",
     "decision architecture",
     "human judgment under AI-assisted overload",
     "decision spine across levels",
-    "UAIRCA ultimate-frame extension"
+    "UAIRCA ultimate-frame extension",
+    "LAIRCA Logos-grounded Christian expression"
   ],
   "related_concepts": [
     "fractal taxonomy",
     "fractal ontology",
     "fractal decision-making",
     "machine-readable artifact design",
-    "recursive governance"
+    "recursive governance",
+    "UAIRCA",
+    "LAIRCA",
+    "Ultimate Frame",
+    "Logos"
   ]
 }
