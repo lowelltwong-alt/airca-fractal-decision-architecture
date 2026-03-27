@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite it as follows."
+title: "AIRCA + Fractal Decision Architecture"
+type: software
+authors:
+  - family-names: Wong
+    given-names: Lowell
+version: 0.1.0
+date-released: 2026-03-27
+url: "https://github.com/lowelltwong-alt/airca-fractal-decision-architecture"
+abstract: >
+  A public concept repository developing AIRCA as an AI-era adaptation of RACI,
+  extended through fractal taxonomy, fractal ontology, and fractal decision architecture.
