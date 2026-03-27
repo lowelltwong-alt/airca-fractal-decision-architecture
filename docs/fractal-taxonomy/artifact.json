@@ -1,0 +1,22 @@
+{
+  "title": "Fractal Taxonomy",
+  "node_type": "concept_node",
+  "parent": "docs",
+  "concept": "fractal taxonomy",
+  "status": "draft",
+  "version": "0.1.0",
+  "author": "Lowell Wong",
+  "scope": [
+    "recursive classification logic",
+    "stable field families",
+    "multi-level structure",
+    "inheritance-aware categorization"
+  ],
+  "related_concepts": [
+    "fractal ontology",
+    "fractal decision-making",
+    "machine-readable artifact design",
+    "recursive governance",
+    "hierarchical representation"
+  ]
+}
