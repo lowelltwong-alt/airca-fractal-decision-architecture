@@ -194,6 +194,19 @@ Start with:
 - `docs/fractal-decision-making/notes-v1.md`
 - `docs/integrations/README.md`
 
+## What to read if you want the visual architecture
+
+Start with:
+
+- `architecture-diagram-notes-v1.md`
+- `architecture-diagram-mermaid.md`
+- `architecture-diagram-mermaid-detailed.md`
+
+These files provide:
+- the text-first diagram logic
+- a simple visual architecture
+- a more detailed visual architecture
+
 ## Working thesis
 
 The best way to read this repository is not as a pile of disconnected notes.
