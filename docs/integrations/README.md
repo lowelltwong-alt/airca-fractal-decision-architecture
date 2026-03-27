@@ -6,7 +6,7 @@ This folder contains notes and artifacts that connect the repository’s major c
 
 The repository’s main ideas are not meant to stand alone.
 
-AIRCA, fractal taxonomy, fractal ontology, and fractal decision-making are best understood as connected layers of a broader architecture.
+AIRCA, fractal taxonomy, fractal ontology, fractal decision-making, machine-readable artifact design, and their higher-order extensions are best understood as connected layers of a broader architecture.
 
 This folder exists to make those connections explicit.
 
@@ -25,6 +25,7 @@ That fragmentation creates several predictable problems:
 - decision-making without taxonomy and ontology can become inconsistent, context-poor, or unstable
 - AIRCA without deeper structural layers can remain a useful decision frame, but not yet a durable operating architecture
 - machine-readable artifacts without conceptual integration can become technically structured but strategically thin
+- theological or higher-order commitments can remain detached from operational architecture
 
 This folder exists to prevent that fragmentation.
 
@@ -43,6 +44,7 @@ That includes questions such as:
 - What happens when one layer is stronger than the others?
 - What breaks when one layer is missing?
 - In what sequence should these layers be built or implemented?
+- How do ultimate-frame commitments shape lower decision architecture?
 
 This node therefore serves as the system-level bridge between ideas that might otherwise remain separate.
 
@@ -54,24 +56,11 @@ The repository’s architecture can be described at a high level like this:
 - **ontology** provides relational meaning
 - **decision-making** provides governed action
 - **AIRCA** provides a decision spine for moving from signal to accountable execution
+- **UAIRCA** makes explicit the ultimate frame above the operational decision architecture
+- **LAIRCA** presents Logos as an explicitly Christian example of that ultimate frame
 - **machine-readable artifacts** provide a durable structure through which these layers can be represented, reused, governed, and interrogated
 
 This folder exists to explain how those layers fit together.
-
-## Why integration is necessary
-
-In practice, institutions do not fail only because they lack information.
-
-They also fail because:
-
-- categories are inconsistent
-- relationships are unclear
-- decisions are weakly structured
-- accountability is disconnected from execution
-- local actions do not roll up into coherent intelligence
-- structured artifacts do not align with the system they are meant to support
-
-Integration is the difference between having a set of ideas and having an operating architecture.
 
 ## Machine-readable integration layer
 
@@ -89,6 +78,7 @@ That includes the move from high-level theory into structured, machine-readable 
 - lifecycle
 - inheritance
 - interpretation rules
+- ultimate-frame constraints where relevant
 
 This matters because the architecture does not become durable merely by being described well. It becomes durable when it can be encoded in structures that preserve meaning, decision logic, and governance across levels.
 
@@ -111,26 +101,6 @@ A machine-readable artifact may therefore need to represent the same kinds of th
 
 The scale changes, but the structure can remain legible.
 
-## Stable field families
-
-The integrations layer should also clarify which field families remain stable across the architecture.
-
-Examples include:
-
-- identity fields
-- classification fields
-- relationship fields
-- logic fields
-- governance fields
-- evidence fields
-- provenance fields
-- validation fields
-- lifecycle fields
-- inheritance fields
-- interpretation fields
-
-These stable families are one of the main bridges between fractal taxonomy, fractal ontology, and fractal decision-making.
-
 ## Artifact class naming and tiering
 
 This node also includes the naming logic for classes of artifacts.
@@ -145,13 +115,6 @@ That means explaining how artifacts are distinguished by things such as:
 - level within the broader structure
 
 This matters because naming chaos weakens both human governance and machine interpretation.
-
-A fractal naming system should make it easier to understand:
-- what kind of artifact something is
-- how durable it is meant to be
-- where it sits in the architecture
-- how it relates to other artifacts
-- what level of review, refresh, or deletion control applies
 
 ## Interpretation and safety rules
 
@@ -169,82 +132,13 @@ This includes rules such as:
 
 This is where the architecture becomes not only structured, but governable.
 
-## Major integration themes
+## Current files in this node
 
-Over time, this node may build out several recurring crosswalks.
-
-### AIRCA and RACI
-How AIRCA extends or adapts RACI for AI-assisted environments.
-
-### Taxonomy and ontology
-How classification and relational meaning depend on each other.
-
-### Ontology and decision-making
-How relationships, dependencies, constraints, and context shape viable decisions.
-
-### Taxonomy and decision-making
-How classification helps determine governance type, review logic, lifecycle, escalation, and valid action.
-
-### AIRCA and fractal decision-making
-How AIRCA functions as a recursive decision spine across levels.
-
-### Machine-readable artifacts
-How structured documents and metadata can carry these concepts into usable systems.
-
-## Example of integration across layers
-
-A useful way to see the role of this node is through an example.
-
-### A document artifact
-Suppose the object is a decision-support artifact.
-
-- **taxonomy** helps classify what kind of artifact it is
-- **ontology** helps show what it relates to, what informs it, and what it affects
-- **decision-making** helps determine what should happen because of it
-- **AIRCA** helps govern how signals from the artifact become ranked options, human commitment, and action
-- **machine-readable structure** helps preserve all of the above in a reusable and governable form
-
-Without integration, that same artifact may be:
-- labeled but not meaningful
-- meaningful but not actionable
-- actionable but not accountable
-- accountable but not reusable
-- reusable but disconnected from system context
-
-This folder exists to close those gaps.
-
-## Sequence logic
-
-Integration also matters because these concepts are not always best built in arbitrary order.
-
-A likely sequence is:
-
-1. establish taxonomy so objects become legible
-2. establish ontology so objects become meaningful in relation to one another
-3. establish decision logic so those structured objects become actionable
-4. use AIRCA as a spine for moving from signal to accountable action
-5. encode the architecture in machine-readable artifacts so it can scale, persist, and be interrogated
-
-This sequence may vary by environment, but the general principle is that later layers become more stable when earlier layers are coherent.
-
-## Failure modes this node is meant to address
-
-This folder should also help identify what breaks when integration is weak.
-
-### If taxonomy is strong but ontology is weak
-You get order without enough meaning.
-
-### If ontology is strong but decision logic is weak
-You get rich context without reliable action.
-
-### If decision logic is strong but taxonomy and ontology are weak
-You get repeated governance rituals on unstable conceptual foundations.
-
-### If AIRCA is present without deeper structural layers
-You get a useful decision frame, but not yet a full knowledge and governance architecture.
-
-### If machine-readable artifacts are present without conceptual integration
-You get technically structured outputs that may still be semantically thin or strategically disconnected.
+- `artifact.json`
+- `lineage.md`
+- `machine-readable-artifact-anchors-and-tags.md`
+- `fractal-artifact-class-naming.md`
+- `example-machine-readable-artifact.md`
 
 ## What this folder is for
 
@@ -260,32 +154,14 @@ It is where the repository can build out:
 - machine-readable architecture links
 - artifact anchor and tag design
 - artifact class naming logic
+- theological and higher-order integration
 - system-level design notes
 - practical implementation bridges
-
-## Expected contents
-
-Over time, this node may include:
-
-- AIRCA and RACI crosswalks
-- taxonomy / ontology / decision model integrations
-- machine-readable artifact design notes
-- anchor and tag models
-- artifact class naming notes
-- sequence and dependency maps
-- tradeoff analyses
-- implementation notes
-- examples of how the full architecture works together
-
-### Current files in this node
-
-- `machine-readable-artifact-anchors-and-tags.md`
-- `fractal-artifact-class-naming.md`
 
 ## Working thesis
 
 The ideas in this repository become more powerful when treated as an integrated architecture rather than as separate concepts.
 
-Taxonomy, ontology, decision-making, AIRCA, and machine-readable artifacts each do different work.
+Taxonomy, ontology, decision-making, AIRCA, UAIRCA, LAIRCA, and machine-readable artifacts each do different work.
 
 The integrations node exists to show how that work fits together into a coherent system.
