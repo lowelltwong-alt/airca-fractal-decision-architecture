@@ -1,0 +1,22 @@
+{
+  "title": "Fractal Decision-Making",
+  "node_type": "concept_node",
+  "parent": "docs",
+  "concept": "fractal decision-making",
+  "status": "draft",
+  "version": "0.1.0",
+  "author": "Lowell T. Wong",
+  "scope": [
+    "recursive decision logic",
+    "decision rights across levels",
+    "review and escalation structures",
+    "human judgment under AI-assisted overload"
+  ],
+  "related_concepts": [
+    "AIRCA",
+    "fractal taxonomy",
+    "fractal ontology",
+    "machine-readable artifact design",
+    "decision intelligence"
+  ]
+}
