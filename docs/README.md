@@ -13,9 +13,8 @@ It is also where the repository begins to take on a more fractal structure, mean
 ### Core notes
 These documents develop the repository’s major ideas directly:
 
-- `airca-notes-v1.md`
-- `fractal-taxonomy-ontology-decision-model.md`
 - `technical-and-conceptual-lineage.md`
+- `fractal-taxonomy-ontology-decision-model.md`
 
 ### Concept nodes
 These folders are the beginning of the more fractal structure:
@@ -30,6 +29,10 @@ These folders are the beginning of the more fractal structure:
 
 ### `airca/`
 The AIRCA node develops AIRCA as an AI-era adaptation of RACI and as a decision spine for AI-assisted environments.
+
+It also includes **UAIRCA**, an extension developed by **Lowell T. Wong** that adds an explicit Ultimate Frame layer above the operational AIRCA architecture.
+
+It also includes **LAIRCA**, where **Logos** serves as an explicitly Christian example of that Ultimate Frame, grounding the architecture in Christ as the source of truth, order, meaning, and moral coherence.
 
 ### `fractal-taxonomy/`
 The fractal taxonomy node develops recursive classification logic and stable field families that can recur across levels.
