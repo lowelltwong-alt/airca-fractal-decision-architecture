@@ -1,0 +1,30 @@
+{
+  "title": "AIRCA",
+  "node_type": "concept_node",
+  "parent": "docs",
+  "concept": "AIRCA",
+  "status": "draft",
+  "version": "0.1.0",
+  "author": "Lowell Wong",
+  "attribution": {
+    "collaborative_emergence": true,
+    "collaborators": [
+      "Alex A.",
+      "Lowell Wong"
+    ],
+    "repository_extension_by": "Lowell Wong"
+  },
+  "scope": [
+    "AI-era adaptation of RACI",
+    "decision architecture",
+    "human judgment under AI-assisted overload",
+    "decision spine across levels"
+  ],
+  "related_concepts": [
+    "fractal taxonomy",
+    "fractal ontology",
+    "fractal decision-making",
+    "machine-readable artifact design",
+    "recursive governance"
+  ]
+}
