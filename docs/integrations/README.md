@@ -176,56 +176,20 @@ Over time, this node may build out several recurring crosswalks.
 ### AIRCA and RACI
 How AIRCA extends or adapts RACI for AI-assisted environments.
 
-This includes questions such as:
-- what RACI handled well
-- where RACI becomes insufficient
-- how AIRCA changes the emphasis from role clarity to decision flow
-- where accountability attaches in AI-assisted systems
-
 ### Taxonomy and ontology
 How classification and relational meaning depend on each other.
-
-This includes questions such as:
-- why categories without relationships remain shallow
-- why relationships without stable categories become unstable
-- how recursive classification and recursive meaning can reinforce each other across levels
 
 ### Ontology and decision-making
 How relationships, dependencies, constraints, and context shape viable decisions.
 
-This includes questions such as:
-- how context changes which options are real
-- why dependencies matter to prioritization
-- how upstream and downstream effects alter decision quality
-- how relational meaning affects what should be escalated, reviewed, or acted on
-
 ### Taxonomy and decision-making
 How classification helps determine governance type, review logic, lifecycle, escalation, and valid action.
-
-This includes questions such as:
-- what kind of thing is being decided
-- what governance category applies
-- what review cycle or threshold should follow from that category
-- what decision logic is appropriate at that level
 
 ### AIRCA and fractal decision-making
 How AIRCA functions as a recursive decision spine across levels.
 
-This includes questions such as:
-- whether AIRCA should apply only at high strategic levels or recur more broadly
-- how Architect, Inform, Rank, Commit, and Act appear at different scales
-- what must remain human-led
-- what can be increasingly machine-supported
-
 ### Machine-readable artifacts
 How structured documents and metadata can carry these concepts into usable systems.
-
-This includes questions such as:
-- how taxonomy can be encoded
-- how ontology can be represented
-- how decisions can be stored in reusable form
-- how artifacts can preserve attribution, lifecycle, and governance logic
-- how structured artifacts help AI reason without losing context
 
 ## Example of integration across layers
 
@@ -312,6 +276,11 @@ Over time, this node may include:
 - tradeoff analyses
 - implementation notes
 - examples of how the full architecture works together
+
+### Current files in this node
+
+- `machine-readable-artifact-anchors-and-tags.md`
+- `fractal-artifact-class-naming.md`
 
 ## Working thesis
 
