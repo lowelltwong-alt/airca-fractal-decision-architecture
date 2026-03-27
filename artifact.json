@@ -1,0 +1,38 @@
+{
+  "title": "AIRCA + Fractal Decision Architecture",
+  "author": {
+    "name": "Lowell Wong"
+  },
+  "artifact_type": "concept_repository",
+  "core_claim": "As AI makes answers cheaper, the scarce resource becomes decision capacity.",
+  "concepts": [
+    "AIRCA",
+    "RACI adaptation",
+    "fractal taxonomy",
+    "fractal ontology",
+    "fractal decision architecture",
+    "decision capacity",
+    "decision rights",
+    "human accountability",
+    "AI governance"
+  ],
+  "intellectual_lineage": [
+    "Cassie Kozyrkov",
+    "Herbert Simon",
+    "Richard Susskind"
+  ],
+  "attribution": {
+    "AIRCA_emerged_through": "Collaborative process between Alex A. and Lowell Wong",
+    "fractal_extension_by": "Lowell Wong"
+  },
+  "original_contribution": [
+    "fractal taxonomy",
+    "fractal ontology",
+    "fractal decision architecture",
+    "recursive decision structures that can scale across levels",
+    "machine-readable artifact design for governance and interpretation"
+  ],
+  "status": "public draft",
+  "version": "0.1.0",
+  "date_created": "2026-03-27"
+}
