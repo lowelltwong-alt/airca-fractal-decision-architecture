@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-04-03T09:00:00Z",
+  "decision": {
+    "id": "choose-airca-mvp",
+    "title": "Choose AIRCA MVP",
+    "question": "What should AIRCA ship first for public adoption?",
+    "context": "The project needs a useful first release that people can understand and try quickly.",
+    "status": "committed",
+    "chosen_option": "Schema + CLI",
+    "rationale": "Schema + CLI creates the fastest path to usability, demos, and GitHub-native adoption.",
+    "action_items": [
+      "Stabilize schema",
+      "Publish examples",
+      "Add GitHub validation"
+    ],
+    "tags": ["mvp", "adoption", "github"],
+    "roles": {
+      "architect": "Lowell T. Wong",
+      "inform": ["Potential contributors", "GitHub users"],
+      "rank": ["Maintainer", "Developer advisor"],
+      "commit": "Lowell T. Wong",
+      "act": ["Repository maintainer"]
+    },
+    "options": [
+      {
+        "name": "Schema + CLI",
+        "description": "Ship a schema, CLI, and example artifacts first.",
+        "scores": {
+          "adoption": 5,
+          "clarity": 5,
+          "difficulty": 4
+        },
+        "total_score": 14,
+        "evidence": ["Fastest useful MVP", "Easy to demonstrate"]
+      },
+      {
+        "name": "Full orchestration engine",
+        "description": "Build a larger workflow engine before examples and packaging.",
+        "scores": {
+          "adoption": 2,
+          "clarity": 2,
+          "difficulty": 1
+        },
+        "total_score": 5,
+        "evidence": ["Powerful later", "Too heavy for first release"]
+      }
+    ],
+    "metadata": {
+      "owner": "Lowell T. Wong"
+    }
+  }
+}
