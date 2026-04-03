@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/airca-decision.schema.json",
+  "title": "AIRCA Decision Artifact",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "decision"],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "decision": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "question",
+        "context",
+        "status",
+        "roles",
+        "options"
+      ],
+      "properties": {
+        "id": {"type": "string"},
+        "title": {"type": "string"},
+        "question": {"type": "string"},
+        "context": {"type": "string"},
+        "status": {"type": "string"},
+        "chosen_option": {"type": ["string", "null"]},
+        "rationale": {"type": "string"},
+        "action_items": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "tags": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "roles": {
+          "type": "object",
+          "required": ["architect", "inform", "rank", "commit", "act"],
+          "properties": {
+            "architect": {"type": "string"},
+            "inform": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "rank": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "commit": {"type": "string"},
+            "act": {
+              "type": "array",
+              "items": {"type": "string"}
+            }
+          }
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "description", "scores", "total_score", "evidence"],
+            "properties": {
+              "name": {"type": "string"},
+              "description": {"type": "string"},
+              "scores": {
+                "type": "object",
+                "additionalProperties": {"type": "number"}
+              },
+              "total_score": {"type": "number"},
+              "evidence": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}
