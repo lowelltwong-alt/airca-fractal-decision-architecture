@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-04-03T09:30:00Z",
+  "decision": {
+    "id": "architecture-approval-example",
+    "title": "Choose AIRCA packaging direction",
+    "question": "How should AIRCA be packaged first to maximize usability and GitHub adoption?",
+    "context": "The project needs a practical first release that is easy to run, easy to explain, and strong enough to generate future papers and examples.",
+    "status": "committed",
+    "chosen_option": "Python package + publish pipeline",
+    "rationale": "This path balances speed, clarity, and real-world usefulness while creating a direct path from decisions to reusable public knowledge.",
+    "action_items": [
+      "Ship publish pipeline",
+      "Add more examples",
+      "Use generated papers as public artifacts"
+    ],
+    "tags": ["architecture", "publish", "adoption"],
+    "roles": {
+      "architect": "Lowell T. Wong",
+      "inform": ["Potential contributors", "GitHub users"],
+      "rank": ["Maintainer", "Developer advisor"],
+      "commit": "Lowell T. Wong",
+      "act": ["Repository maintainer"]
+    },
+    "options": [
+      {
+        "name": "Python package + publish pipeline",
+        "description": "Ship a usable package and turn decisions into white-paper-style outputs.",
+        "scores": {"usability": 5, "clarity": 5, "adoption": 5},
+        "total_score": 15,
+        "evidence": ["Fast time to value", "GitHub-native", "Content engine"]
+      },
+      {
+        "name": "Theory docs only",
+        "description": "Keep expanding conceptual docs without productized outputs.",
+        "scores": {"usability": 1, "clarity": 2, "adoption": 1},
+        "total_score": 4,
+        "evidence": ["Low immediate value", "Harder to attract users"]
+      }
+    ],
+    "metadata": {
+      "assumptions": [
+        "People adopt tools faster than abstract frameworks",
+        "Reusable outputs increase repository desirability"
+      ],
+      "uncertainties": [
+        "How quickly contributors will adopt the paper workflow",
+        "Which use case will resonate most first"
+      ],
+      "human_review": {
+        "required": true,
+        "reviewer": "",
+        "status": "pending",
+        "notes": ""
+      },
+      "learning": {
+        "review_horizon": "30 days",
+        "signals": [],
+        "outcome_summary": ""
+      }
+    }
+  }
+}
