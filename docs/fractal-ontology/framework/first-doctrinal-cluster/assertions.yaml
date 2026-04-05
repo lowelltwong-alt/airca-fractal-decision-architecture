@@ -1,0 +1,110 @@
+assertions:
+  - id: assertion.justification.001
+    subject: view.justification.forensic_imputation
+    predicate: contradicts
+    object: view.justification.infused_righteousness
+    scope: baseline.comparative.general
+    weight: 0.92
+    confidence: 0.87
+    rationale: >-
+      One account treats justification primarily as a declarative imputation,
+      while the other joins justification more tightly to infused renewal.
+
+  - id: assertion.justification.002
+    subject: view.justification.forensic_imputation
+    predicate: depends_on
+    object: claim.justification.faith_is_instrumental
+    scope: baseline.reformed_confessional
+    weight: 0.89
+    confidence: 0.94
+    rationale: Faith functions instrumentally rather than meritoriously.
+
+  - id: assertion.justification.003
+    subject: view.justification.forensic_imputation
+    predicate: depends_on
+    object: claim.justification.distinction_from_sanctification
+    scope: baseline.reformed_confessional
+    weight: 0.83
+    confidence: 0.89
+    rationale: The model becomes unstable if justification and sanctification collapse into one act.
+
+  - id: assertion.justification.004
+    subject: view.justification.infused_righteousness
+    predicate: depends_on
+    object: claim.justification.renewal_is_integral
+    scope: baseline.catholic_tridentine
+    weight: 0.86
+    confidence: 0.93
+    rationale: Renewal is not merely downstream but included in the logic of justification.
+
+  - id: assertion.justification.005
+    subject: view.justification.infused_righteousness
+    predicate: depends_on
+    object: claim.justification.sacramental_mediation_can_be_integral
+    scope: baseline.catholic_tridentine
+    weight: 0.74
+    confidence: 0.84
+    rationale: Sacramental life may mediate or mark the justified life within this baseline.
+
+  - id: assertion.justification.006
+    subject: view.justification.synergistic_participation
+    predicate: reinforces
+    object: claim.justification.human_response_is_real
+    scope: baseline.comparative.general
+    weight: 0.68
+    confidence: 0.78
+    rationale: The participatory account emphasizes enabled but real human response.
+
+  - id: assertion.justification.007
+    subject: view.justification.synergistic_participation
+    predicate: partially_conflicts_with
+    object: view.justification.forensic_imputation
+    scope: baseline.comparative.general
+    weight: 0.51
+    confidence: 0.70
+    rationale: The views overlap on grace and Christ but diverge on passivity, status, and renewal relation.
+
+  - id: assertion.justification.008
+    subject: view.justification.moral_reduction
+    predicate: contradicts
+    object: claim.justification.grace_is_necessary
+    scope: baseline.ecumenical_minimum
+    weight: 0.95
+    confidence: 0.91
+    rationale: The reductionist account collapses justification into moral improvement.
+
+  - id: assertion.justification.009
+    subject: view.justification.moral_reduction
+    predicate: contradicts
+    object: claim.justification.christs_objective_work_is_central
+    scope: baseline.ecumenical_minimum
+    weight: 0.93
+    confidence: 0.90
+    rationale: The account marginalizes objective saving work.
+
+  - id: assertion.justification.010
+    subject: view.justification.antinomian_distortion
+    predicate: contradicts
+    object: claim.justification.justification_never_nullifies_holiness
+    scope: baseline.ecumenical_minimum
+    weight: 0.97
+    confidence: 0.95
+    rationale: Antinomianism severs justification from the seriousness of holiness.
+
+  - id: assertion.justification.011
+    subject: view.justification.antinomian_distortion
+    predicate: contradicts
+    object: view.justification.infused_righteousness
+    scope: baseline.comparative.general
+    weight: 0.88
+    confidence: 0.83
+    rationale: The distortion directly rejects renewal-oriented accounts.
+
+  - id: assertion.justification.012
+    subject: view.justification.antinomian_distortion
+    predicate: contradicts
+    object: view.justification.forensic_imputation
+    scope: baseline.reformed_confessional
+    weight: 0.72
+    confidence: 0.75
+    rationale: Historic forensic accounts still require sanctification as fruit, even where distinguished from justification.
