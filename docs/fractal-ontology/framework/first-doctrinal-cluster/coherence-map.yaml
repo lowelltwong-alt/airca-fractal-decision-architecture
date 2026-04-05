@@ -1,0 +1,68 @@
+state_model:
+  activation_range: [0.0, 1.0]
+  interpretation: >-
+    Each view receives an activation value representing present commitment,
+    endorsement, or modeled emphasis inside a baseline or agent profile.
+
+claim_nodes:
+  - id: claim.justification.faith_is_instrumental
+  - id: claim.justification.distinction_from_sanctification
+  - id: claim.justification.renewal_is_integral
+  - id: claim.justification.sacramental_mediation_can_be_integral
+  - id: claim.justification.human_response_is_real
+  - id: claim.justification.grace_is_necessary
+  - id: claim.justification.christs_objective_work_is_central
+  - id: claim.justification.justification_never_nullifies_holiness
+
+scoring_rules:
+  contradiction_penalty: "weight * min(x_i, x_j)"
+  partial_conflict_penalty: "weight * min(x_i, x_j) * 0.5"
+  dependency_penalty: "weight * max(0, x_subject - x_object)"
+  reinforcement_bonus: "weight * x_i * x_j"
+
+bundle_constraints:
+  - id: bundle.reformed_forensic_core
+    scope: baseline.reformed_confessional
+    members:
+      - view.justification.forensic_imputation
+      - claim.justification.faith_is_instrumental
+      - claim.justification.distinction_from_sanctification
+      - claim.justification.christs_objective_work_is_central
+    rule: >-
+      If forensic imputation is highly active while faith-as-instrument or the
+      distinction from sanctification is weak, cluster tension rises sharply.
+
+  - id: bundle.catholic_infusion_core
+    scope: baseline.catholic_tridentine
+    members:
+      - view.justification.infused_righteousness
+      - claim.justification.renewal_is_integral
+      - claim.justification.sacramental_mediation_can_be_integral
+      - claim.justification.grace_is_necessary
+    rule: >-
+      If infused righteousness is active while renewal or grace mediation is
+      minimized, coherence falls within the Catholic baseline.
+
+  - id: bundle.ecumenical_boundary
+    scope: baseline.ecumenical_minimum
+    members:
+      - claim.justification.grace_is_necessary
+      - claim.justification.christs_objective_work_is_central
+      - claim.justification.justification_never_nullifies_holiness
+    rule: >-
+      Any active view that strongly contradicts these claims creates boundary
+      breach conditions for historical orthodoxy review.
+
+outputs:
+  - local_tension
+  - cluster_tension
+  - global_coherence_delta
+  - misalignment_vector
+  - baseline_boundary_alert
+
+propagation_logic:
+  description: >-
+    When a view activation changes, recompute direct contradictions,
+    dependencies, and bundle constraints first, then propagate to neighboring
+    nodes until score deltas fall below a threshold.
+  stop_threshold: 0.01
