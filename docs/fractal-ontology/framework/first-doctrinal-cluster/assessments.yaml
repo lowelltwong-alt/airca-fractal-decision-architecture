@@ -1,0 +1,69 @@
+baselines:
+  - id: baseline.reformed_confessional
+    label: Reformed confessional baseline
+    description: >-
+      A classic Reformed confessional frame centered on forensic justification,
+      faith as instrument, and a meaningful distinction between justification
+      and sanctification.
+    assessments:
+      - view: view.justification.forensic_imputation
+        verdict: affirmed
+        confidence: 0.96
+      - view: view.justification.infused_righteousness
+        verdict: rejected
+        confidence: 0.88
+      - view: view.justification.synergistic_participation
+        verdict: disputed
+        confidence: 0.62
+      - view: view.justification.moral_reduction
+        verdict: false_doctrine
+        confidence: 0.93
+      - view: view.justification.antinomian_distortion
+        verdict: false_doctrine
+        confidence: 0.97
+
+  - id: baseline.catholic_tridentine
+    label: Catholic Tridentine baseline
+    description: >-
+      A Roman Catholic baseline that binds justification closely to infused
+      grace, renewal, and sacramental life while rejecting reductionist and
+      antinomian distortions.
+    assessments:
+      - view: view.justification.forensic_imputation
+        verdict: rejected
+        confidence: 0.86
+      - view: view.justification.infused_righteousness
+        verdict: affirmed
+        confidence: 0.97
+      - view: view.justification.synergistic_participation
+        verdict: permitted
+        confidence: 0.68
+      - view: view.justification.moral_reduction
+        verdict: false_doctrine
+        confidence: 0.94
+      - view: view.justification.antinomian_distortion
+        verdict: false_doctrine
+        confidence: 0.97
+
+  - id: baseline.ecumenical_minimum
+    label: Ecumenical minimum baseline
+    description: >-
+      A lighter shared boundary meant to identify positions clearly inside or
+      outside broad historical orthodoxy without resolving all confessional
+      differences.
+    assessments:
+      - view: view.justification.forensic_imputation
+        verdict: permitted
+        confidence: 0.82
+      - view: view.justification.infused_righteousness
+        verdict: permitted
+        confidence: 0.82
+      - view: view.justification.synergistic_participation
+        verdict: disputed
+        confidence: 0.60
+      - view: view.justification.moral_reduction
+        verdict: rejected
+        confidence: 0.88
+      - view: view.justification.antinomian_distortion
+        verdict: false_doctrine
+        confidence: 0.96
