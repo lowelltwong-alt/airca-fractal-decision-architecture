@@ -1,0 +1,101 @@
+topic:
+  id: doctrine.justification
+  label: Justification
+  type: DoctrineTopic
+  description: >-
+    The doctrine concerning how sinners are accounted righteous before God,
+    including questions of ground, instrument, grace, sacramental relation,
+    renewal, merit, and final standing.
+  subquestions:
+    - What is the ground of justification?
+    - What is the instrument or means of reception?
+    - How does justification relate to sanctification?
+    - What role, if any, do sacramental mediation and obedience play?
+
+views:
+  - id: view.justification.forensic_imputation
+    label: Forensic imputation
+    family: Protestant
+    summary: >-
+      Justification is God's declarative act in which the believer is counted
+      righteous on the basis of Christ's righteousness, received by faith and
+      not by intrinsic merit.
+    representative_streams:
+      - Lutheran
+      - Reformed
+    related_theologians:
+      - Martin Luther
+      - John Calvin
+    primary_claims:
+      - justification_is_declarative
+      - righteousness_is_imputed
+      - faith_is_instrumental
+      - justification_distinct_from_sanctification
+
+  - id: view.justification.infused_righteousness
+    label: Infused righteousness
+    family: Catholic
+    summary: >-
+      Justification includes the infusion of grace by which the believer is
+      made righteous, so that justification and renewal are tightly joined.
+    representative_streams:
+      - Roman Catholic
+    related_theologians:
+      - Thomas Aquinas
+      - Council of Trent
+    primary_claims:
+      - grace_is_infused
+      - justification_includes_renewal
+      - sacramental_mediation_can_be_integral
+      - intrinsic_righteousness_matters
+
+  - id: view.justification.synergistic_participation
+    label: Synergistic participatory account
+    family: Broad participatory / synergistic
+    summary: >-
+      Justification is understood through covenantal or participatory union in
+      which grace initiates and enables while the believer's response is not
+      treated as merely passive.
+    representative_streams:
+      - Eastern Christian tendencies
+      - Some Wesleyan or participatory readings
+    related_theologians:
+      - John Wesley
+      - various participatory interpreters
+    primary_claims:
+      - grace_precedes_response
+      - participation_language_is_central
+      - renewal_and_status_are_tightly_related
+      - human_response_is_real
+
+  - id: view.justification.moral_reduction
+    label: Moral reductionism
+    family: Reductionist
+    summary: >-
+      Justification is reduced to moral reform, exemplary imitation, or God's
+      recognition of ethical improvement without adequate grounding in grace or
+      Christ's objective saving work.
+    representative_streams:
+      - Rationalist reduction
+      - moral-exemplar distortion
+    related_theologians:
+      - none_canonical
+    primary_claims:
+      - moral_improvement_is_sufficient
+      - objective_grace_is_minimized
+      - christs_merit_is_decentered
+
+  - id: view.justification.antinomian_distortion
+    label: Antinomian distortion
+    family: Distortion
+    summary: >-
+      Justification is distorted into a denial that obedience, sanctification,
+      repentance, or moral seriousness matter in the Christian life.
+    representative_streams:
+      - antinomian extremes
+    related_theologians:
+      - none_normative
+    primary_claims:
+      - obedience_is_irrelevant
+      - sanctification_is_optional
+      - assurance_is_detached_from_fruit
