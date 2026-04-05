@@ -1,0 +1,57 @@
+airca_binding:
+  object: doctrine.justification
+  description: >-
+    AIRCA roles for reviewing and governing justification views inside a chosen
+    doctrinal baseline.
+
+  architect:
+    responsibilities:
+      - select doctrinal baseline
+      - define verdict vocabulary
+      - set contradiction and dependency thresholds
+      - approve boundary rules for false_doctrine labeling
+    outputs:
+      - baseline profile
+      - scoring thresholds
+      - protected rule set
+
+  inform:
+    responsibilities:
+      - collect view summaries
+      - gather provenance-bearing assertions
+      - surface theologian, confession, and text references
+      - identify contradiction and dependency candidates
+    outputs:
+      - evidence packet
+      - assertion graph
+      - unresolved questions list
+
+  rank:
+    responsibilities:
+      - calculate local and cluster tension
+      - score fit against selected baseline
+      - identify highest-risk incoherence points
+    outputs:
+      - ranked views
+      - boundary alerts
+      - misalignment vector
+
+  commit:
+    responsibilities:
+      - human review of proposed assessments
+      - approval or rejection of baseline verdict changes
+      - explicit acceptance of unresolved tensions where needed
+    outputs:
+      - signed assessment update
+      - accepted state vector
+      - review log
+
+  act:
+    responsibilities:
+      - publish updated cluster artifacts
+      - trigger downstream crosswalk updates
+      - notify dependent doctrine or governance nodes
+    outputs:
+      - updated machine-readable artifacts
+      - change record
+      - propagation tasks
