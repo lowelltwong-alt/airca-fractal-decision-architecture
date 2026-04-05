@@ -1,0 +1,41 @@
+@prefix airca: <https://example.org/airca/> .
+@prefix ex: <https://example.org/airca/justification/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:justification a airca:DoctrineTopic ;
+  airca:label "Justification" .
+
+ex:forensic_imputation a airca:DoctrineView ;
+  airca:aboutTopic ex:justification ;
+  airca:label "Forensic imputation" ;
+  airca:family "Protestant" .
+
+ex:infused_righteousness a airca:DoctrineView ;
+  airca:aboutTopic ex:justification ;
+  airca:label "Infused righteousness" ;
+  airca:family "Catholic" .
+
+ex:antinomian_distortion a airca:DoctrineView ;
+  airca:aboutTopic ex:justification ;
+  airca:label "Antinomian distortion" ;
+  airca:family "Distortion" .
+
+ex:assertion001 a airca:Assertion ;
+  airca:subject ex:forensic_imputation ;
+  airca:predicate airca:contradicts ;
+  airca:object ex:infused_righteousness ;
+  airca:scope "baseline.comparative.general" ;
+  airca:weight "0.92" ;
+  airca:confidence "0.87" .
+
+ex:assessment001 a airca:Assessment ;
+  airca:baseline "baseline.reformed_confessional" ;
+  airca:assessedView ex:forensic_imputation ;
+  airca:verdict "affirmed" ;
+  airca:confidence "0.96" .
+
+ex:assessment002 a airca:Assessment ;
+  airca:baseline "baseline.reformed_confessional" ;
+  airca:assessedView ex:antinomian_distortion ;
+  airca:verdict "false_doctrine" ;
+  airca:confidence "0.97" .
