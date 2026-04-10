@@ -1,0 +1,35 @@
+{
+  "artifact_id": "pilots.secular-ai-safety-launch",
+  "title": "Secular AI Safety Launch Pilot",
+  "artifact_type": "example_artifact",
+  "status": "draft",
+  "version": "0.1.0",
+  "created_at": "2026-04-10",
+  "updated_at": "2026-04-10",
+  "summary": "A bounded applied pilot showing how the AIRCA framework can structure an AI feature launch decision with views, assessments, assertions, and review logic.",
+  "author": {
+    "name": "Lowell T. Wong",
+    "role": "author"
+  },
+  "scope": [
+    "applied pilot",
+    "secular extension",
+    "AI safety governance",
+    "launch decision",
+    "reviewable machine-readable artifact"
+  ],
+  "related_concepts": [
+    "AIRCA",
+    "fractal decision-making",
+    "machine-readable artifact design",
+    "framework package",
+    "secular extension"
+  ],
+  "source_docs": [
+    "pilots/README.md",
+    "pilots/secular-ai-safety-launch/README.md",
+    "pilots/secular-ai-safety-launch/case.md",
+    "pilots/secular-ai-safety-launch/decision-graph.ttl",
+    "pilots/secular-ai-safety-launch/review-checklist.md"
+  ]
+}

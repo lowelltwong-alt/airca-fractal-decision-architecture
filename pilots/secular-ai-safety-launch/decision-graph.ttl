@@ -1,0 +1,62 @@
+@prefix ex: <https://example.org/framework/> .
+
+ex:q-launch a ex:QuestionTopic ;
+  ex:label "Should the AI summarization feature ship this quarter?" ;
+  ex:description "A bounded product-governance launch decision for a customer-facing AI summarization feature." .
+
+ex:view-a a ex:ViewPosition ;
+  ex:label "Ship now" ;
+  ex:position_type "secular" ;
+  ex:policy_context "product release" .
+
+ex:view-b a ex:ViewPosition ;
+  ex:label "Ship with controls" ;
+  ex:position_type "secular" ;
+  ex:policy_context "AI safety review" ;
+  ex:stakeholder_scope "product, legal, safety" .
+
+ex:view-c a ex:ViewPosition ;
+  ex:label "Delay launch" ;
+  ex:position_type "secular" ;
+  ex:policy_context "risk hold" .
+
+ex:assert-1 a ex:Assertion ;
+  ex:label "Internal testing shows clear productivity upside." ;
+  ex:source_ref "internal-eval-001" ;
+  ex:standard_reference "evaluation memo" .
+
+ex:assert-2 a ex:Assertion ;
+  ex:label "Some outputs omit or distort important case details in edge conditions." ;
+  ex:source_ref "safety-review-002" ;
+  ex:control_reference "prelaunch safety review" .
+
+ex:assess-risk a ex:Assessment ;
+  ex:label "Risk assessment" ;
+  ex:assessment_type "risk" ;
+  ex:score "0.78" ;
+  ex:risk_score "high" ;
+  ex:impact_level "material" .
+
+ex:assess-governance a ex:Assessment ;
+  ex:label "Governance fit assessment" ;
+  ex:assessment_type "governance" ;
+  ex:score "0.86" ;
+  ex:risk_score "moderate" ;
+  ex:impact_level "acceptable with controls" .
+
+ex:coherence-1 a ex:CoherenceState ;
+  ex:label "Preferred rollout state" ;
+  ex:coherence_score "0.84" .
+
+ex:view-a ex:addresses_question ex:q-launch .
+ex:view-b ex:addresses_question ex:q-launch .
+ex:view-c ex:addresses_question ex:q-launch .
+
+ex:assert-1 ex:supports ex:view-b .
+ex:assert-2 ex:challenges ex:view-a .
+ex:assert-2 ex:supports ex:view-c .
+
+ex:assess-risk ex:assesses ex:view-a .
+ex:assess-governance ex:assesses ex:view-b .
+
+ex:coherence-1 ex:summarizes_state ex:view-b .

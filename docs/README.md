@@ -25,6 +25,11 @@ These folders are the beginning of the more fractal structure:
 - `fractal-decision-making/`
 - `integrations/`
 
+### Applied pilots
+The repository now also includes a small pilots layer for bounded, reviewable example implementations:
+
+- `../pilots/`
+
 ## What the concept nodes mean
 
 ### `airca/`
@@ -54,6 +59,7 @@ The repository is not only collecting notes. It is beginning to model the same i
 - recursive concept nodes
 - human-readable entry points
 - machine-readable architecture beneath them
+- bounded applied pilots that prove the architecture can travel into reviewable cases
 
 That is what makes the `docs/` layer the first real fractal content layer of the repository.
 
