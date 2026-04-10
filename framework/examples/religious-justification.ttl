@@ -1,0 +1,18 @@
+@prefix ex: <https://example.org/framework/> .
+
+ex:q1 a ex:QuestionTopic ;
+  ex:label "Should this practice be justified?" ;
+  ex:description "Example question for a religious extension pack." .
+
+ex:v1 a ex:ViewPosition ;
+  ex:label "Tradition-scoped justification" ;
+  ex:position_type "religious" ;
+  ex:tradition "Christian" .
+
+ex:a1 a ex:Assertion ;
+  ex:label "A sourced doctrinal claim" ;
+  ex:source_ref "Catechism §000" ;
+  ex:authority_source "catechism" .
+
+ex:v1 ex:addresses_question ex:q1 .
+ex:a1 ex:supports ex:v1 .

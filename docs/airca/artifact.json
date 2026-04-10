@@ -1,11 +1,18 @@
 {
+  "artifact_id": "docs.airca",
   "title": "AIRCA",
-  "node_type": "concept_node",
+  "artifact_type": "concept_node",
   "parent": "docs",
   "concept": "AIRCA",
   "status": "draft",
-  "version": "0.1.0",
-  "author": "Lowell T. Wong",
+  "version": "0.2.0",
+  "created_at": "2026-03-27",
+  "updated_at": "2026-04-08",
+  "summary": "Concept-node metadata for AIRCA, UAIRCA, and LAIRCA as the decision spine and its higher-order extensions.",
+  "author": {
+    "name": "Lowell T. Wong",
+    "role": "author"
+  },
   "attribution": {
     "collaborative_emergence": true,
     "collaborators": [
@@ -34,5 +41,12 @@
     "LAIRCA",
     "Ultimate Frame",
     "Logos"
+  ],
+  "source_docs": [
+    "docs/airca/README.md",
+    "docs/airca/notes-v1.md",
+    "docs/airca/uairca-notes-v1.md",
+    "docs/airca/lairca-notes-v1.md",
+    "docs/airca/lineage.md"
   ]
 }

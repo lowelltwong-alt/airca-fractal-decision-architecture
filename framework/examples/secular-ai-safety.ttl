@@ -1,0 +1,19 @@
+@prefix ex: <https://example.org/framework/> .
+
+ex:q2 a ex:QuestionTopic ;
+  ex:label "Should this AI feature ship?" ;
+  ex:description "Example question for a secular extension pack." .
+
+ex:v2 a ex:ViewPosition ;
+  ex:label "Delay launch pending safety controls" ;
+  ex:position_type "secular" ;
+  ex:policy_context "AI safety review" .
+
+ex:as2 a ex:Assessment ;
+  ex:label "Risk assessment" ;
+  ex:assessment_type "risk" ;
+  ex:score "0.82" ;
+  ex:risk_score "high" .
+
+ex:v2 ex:addresses_question ex:q2 .
+ex:as2 ex:assesses ex:v2 .

@@ -1,0 +1,41 @@
+classes:
+  - id: QuestionTopic
+    label: Question Topic
+    description: A bounded question, issue, or decision object under consideration.
+    required_fields:
+      - id
+      - label
+      - description
+
+  - id: ViewPosition
+    label: View Position
+    description: A candidate stance, interpretation, or proposal about a question.
+    required_fields:
+      - id
+      - label
+      - position_type
+
+  - id: Assessment
+    label: Assessment
+    description: An evaluation of a target question or view using explicit criteria.
+    required_fields:
+      - id
+      - label
+      - assessment_type
+      - score
+
+  - id: Assertion
+    label: Assertion
+    description: A sourced claim linked to a question, view, or assessment.
+    required_fields:
+      - id
+      - label
+      - source_ref
+
+  - id: CoherenceState
+    label: Coherence State
+    description: A summary of tension, alignment, conflict, or reinforcement across related nodes.
+    required_fields:
+      - id
+      - label
+      - coherence_score

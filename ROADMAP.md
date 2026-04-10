@@ -1,201 +1,157 @@
-# How to Read This Repo
+# ROADMAP
 
-This repository develops a connected architecture for decision-making, governance, and machine-readable artifacts in AI-assisted environments.
+This roadmap turns the repository from a strong concept-and-notes project into a validated, machine-readable, governance-ready architecture.
 
-Because the repository includes several related concept nodes and both general and explicitly Christian extensions, new readers may benefit from a suggested reading path.
+## Why this roadmap exists
 
-## What this repo is
+The repository already has a clear thesis: as AI makes answers cheaper, the scarce resource becomes decision capacity.
 
-At the highest level, this repository is about one central problem:
+What is still missing is the execution layer that makes that thesis durable:
+- consistent artifact contracts
+- validation and CI
+- explicit framework files, not only framework intent
+- lifecycle and change governance
+- pilot examples that prove the architecture can travel from theory into use
 
-**As AI makes answers cheaper, the scarce resource becomes decision capacity.**
+## Phase 0 — Repository hygiene and truth-in-structure
 
-The repository explores how institutions can preserve:
+### Goals
+- Keep `docs/how-to-read-this-repo.md` as the reading guide.
+- Make `ROADMAP.md` an actual roadmap.
+- Align every “included” or “coming next” claim with the files that actually exist.
 
-- classification
-- meaning
-- accountability
-- review
-- lifecycle control
-- higher-order commitments
-- durable decision memory
+### Deliverables
+- Replace the duplicated reading-guide content in `ROADMAP.md`.
+- Add a repository-wide artifact schema.
+- Add a validator script and CI workflow.
+- Fill the root `framework/` package with the files it already promises.
 
-It does this through a connected architecture built around:
+### Exit criteria
+- The repository tree matches its own README claims.
+- All `artifact.json` files validate.
+- CI fails on contract drift.
 
-- AIRCA
-- UAIRCA
-- LAIRCA
-- fractal taxonomy
-- fractal ontology
-- fractal decision-making
-- machine-readable artifact design
+## Phase 1 — Artifact contract and repository validation
 
-## Where to start
+### Goals
+- Make machine-readable artifacts real repository primitives, not just examples.
+- Normalize metadata across root and concept-node artifacts.
 
-If you are new to the repository, the best order is usually:
+### Deliverables
+- `schemas/artifact.schema.json`
+- normalized `artifact.json` files across the repo
+- `scripts/validate_repo.py`
+- `.github/workflows/validate.yml`
 
-### 1. Root `README.md`
-Read this first for the top-level claim and overall architecture.
+### Exit criteria
+- every artifact has:
+  - stable `artifact_id`
+  - consistent `artifact_type`
+  - normalized author structure
+  - version and status
+  - summary
+  - scope
+  - source document references
+- duplicate IDs are rejected
+- broken source references are rejected
 
-### 2. `docs/README.md`
-Read this next for the internal structure of the repository.
+## Phase 2 — Framework core becomes executable
 
-### 3. `docs/airca/`
-Read the AIRCA node first if you want to understand the decision spine.
+### Goals
+- Turn the root `framework/` package into a usable starter kit.
+- Make the architecture legible to humans and testable by machines.
 
-Recommended order:
-- `README.md`
-- `notes-v1.md`
-- `uairca-notes-v1.md`
-- `lairca-notes-v1.md`
-- `lineage.md`
+### Deliverables
+- `framework/docs/core-schema-spec.md`
+- `framework/schemas/core/classes.yaml`
+- `framework/schemas/core/edges.yaml`
+- `framework/schemas/extensions/religious.yaml`
+- `framework/schemas/extensions/secular.yaml`
+- `framework/validation/shacl/core.shacl.ttl`
+- `framework/examples/religious-justification.ttl`
+- `framework/examples/secular-ai-safety.ttl`
 
-### 4. `docs/fractal-taxonomy/`
-Read this if you want to understand recursive classification.
+### Exit criteria
+- the framework package is self-describing
+- example data conforms to the starter shape rules
+- the root `framework/README.md` is no longer aspirational
 
-### 5. `docs/fractal-ontology/`
-Read this if you want to understand recursive meaning and relationship structure.
+## Phase 3 — Governance and lifecycle
 
-### 6. `docs/fractal-decision-making/`
-Read this if you want to understand recursive decision logic across levels.
+### Goals
+- Make ontology/taxonomy evolution governable.
+- Prevent silent semantic drift.
 
-### 7. `docs/integrations/`
-Read this once you want to see how the whole system fits together, especially the machine-readable artifact layer.
+### Deliverables
+- `GOVERNANCE.md`
+- `governance/change-taxonomy.yaml`
+- lifecycle expectations for draft → active → deprecated → retired
+- replacement and migration rules for future term changes
 
-## If you want the shortest path
+### Exit criteria
+- breaking vs non-breaking changes are defined
+- deprecations preserve resolvability and replacement pointers
+- reviewers and required artifacts are explicit
 
-If you want the quickest path to the central architecture, read:
+## Phase 4 — Applied pilots
 
-1. root `README.md`
-2. `docs/airca/notes-v1.md`
-3. `docs/airca/uairca-notes-v1.md`
-4. `docs/airca/lairca-notes-v1.md`
-5. `docs/fractal-taxonomy-ontology-decision-model.md`
-6. `docs/integrations/README.md`
-7. `docs/integrations/example-machine-readable-artifact.md`
+### Goals
+- Demonstrate that AIRCA + fractal architecture works on real decisions, not only on conceptual notes.
 
-That is the shortest route to the main thesis.
+### Pilot tracks
+1. **Secular pilot**
+   - AI safety / policy / product governance example
+2. **Christian pilot**
+   - LAIRCA / theological governance example
+3. **Cross-context pilot**
+   - same core framework + different extension pack
 
-## General vs. Christian-specific material
+### Exit criteria
+- each pilot has:
+  - a bounded question
+  - structured views / positions
+  - assessments and assertions
+  - evidence / provenance
+  - coherence or ranking output
+  - review trail
 
-This repo includes both general and explicitly Christian material.
+## Suggested release sequence
 
-### General architecture
-These parts are intended to be broadly usable:
-- AIRCA
-- fractal taxonomy
-- fractal ontology
-- fractal decision-making
-- machine-readable artifact design
-- integrations around governance and decision systems
+### v0.2
+Repository contracts and validation
+- artifact schema
+- normalized artifacts
+- CI
+- real roadmap
 
-### Higher-order but still general
-These parts expand the framework without making it exclusively Christian:
-- UAIRCA
-- Ultimate Frame
-- first-principles governance
-- constitutional / philosophical / mission-based higher-order commitments
-
-### Explicitly Christian
-These parts are explicitly Christian in articulation:
-- LAIRCA
-- Logos as Ultimate Frame
-- theological decision architecture
-- Christian AI governance
-- moral anthropology where framed theologically
-
-This distinction matters because not every reader will want the same level of theological specificity.
-
-## Collaborative vs. repository-specific work
-
-This repo distinguishes among different types of contribution.
-
-### Collaborative emergence
-AIRCA is treated here as emerging through a collaborative process between Alex A. and Lowell T. Wong.
-
-### Schema-derived structure
-The machine-readable and recursive schema layer draws heavily on the fractal decision artifact schema and template work.
-
-### Repository-specific synthesis
-The following are developed here as repository-specific synthesis by **Lowell T. Wong**:
-- fractal taxonomy as part of a broader decision architecture
-- fractal ontology as part of a broader decision architecture
-- fractal decision-making in this form
-- machine-readable artifact integration
-- UAIRCA
-- LAIRCA
-- the integrations architecture connecting all of the above
-
-If you want deeper attribution detail, read the various `lineage.md` files.
-
-## Theory vs. application
-
-This repository is mainly a **theory and architecture repo**, not yet a full applied implementation repo.
-
-### Theory / architecture materials
-Most of the current files are about:
-- conceptual framing
-- recursive structure
-- governance logic
-- attribution and lineage
-- machine-readable artifact design
-
-### Applied direction
-The repository also points toward future applied work, especially in:
-- faith-grounded AI governance
-- Christian decision architecture
-- institution-specific theological governance design
-- machine-readable decision support artifacts
-
-A future application repo may grow out of this one.
-
-## How the fractal structure works
-
-The repository is beginning to model the same logic it argues for.
-
-Each major concept node is moving toward a repeated internal structure:
-
-- `README.md`
-- `artifact.json`
-- `lineage.md`
-- `notes-v1.md`
-
-Some nodes also contain:
+### v0.3
+Framework starter package
+- classes
+- edges
+- extension packs
+- SHACL
 - examples
-- higher-order extensions
-- machine-readable artifact notes
 
-This repeated structure is part of what makes the repo increasingly fractal.
+### v0.4
+Governance release
+- change taxonomy
+- lifecycle policy
+- migration rules
 
-## What to read if you care most about machine-readable artifacts
+### v0.5
+Pilot release
+- one secular pilot
+- one Christian pilot
+- documented review path
 
-Start with:
+## Current priority
 
-- `docs/integrations/README.md`
-- `docs/integrations/machine-readable-artifact-anchors-and-tags.md`
-- `docs/integrations/fractal-artifact-class-naming.md`
-- `docs/integrations/example-machine-readable-artifact.md`
-- `docs/airca/example-machine-readable-airca-artifact.md`
+The highest-leverage next move is not writing more notes.
 
-## What to read if you care most about theology and AI
+It is locking the repository’s own contracts:
+1. schema
+2. validation
+3. framework starter files
+4. governance rules
 
-Start with:
-
-- `docs/airca/uairca-notes-v1.md`
-- `docs/airca/lairca-notes-v1.md`
-- `docs/integrations/notes-v1.md`
-- `docs/technical-and-conceptual-lineage.md`
-
-## What to read if you care most about decision architecture
-
-Start with:
-
-- `docs/airca/notes-v1.md`
-- `docs/fractal-decision-making/notes-v1.md`
-- `docs/integrations/README.md`
-
-## Working thesis
-
-The best way to read this repository is not as a pile of disconnected notes.
-
-It is better understood as a developing architecture in which decision logic, recursive structure, machine-readable artifacts, and higher-order commitments are gradually being made explicit and connected.
+That is the shortest path from “interesting architecture” to “credible reference implementation.”

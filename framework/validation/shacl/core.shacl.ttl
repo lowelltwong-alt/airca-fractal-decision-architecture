@@ -1,0 +1,23 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <https://example.org/framework/> .
+
+ex:QuestionTopicShape a sh:NodeShape ;
+  sh:targetClass ex:QuestionTopic ;
+  sh:property [ sh:path ex:label ; sh:minCount 1 ] ;
+  sh:property [ sh:path ex:description ; sh:minCount 1 ] .
+
+ex:ViewPositionShape a sh:NodeShape ;
+  sh:targetClass ex:ViewPosition ;
+  sh:property [ sh:path ex:label ; sh:minCount 1 ] ;
+  sh:property [ sh:path ex:position_type ; sh:minCount 1 ] .
+
+ex:AssessmentShape a sh:NodeShape ;
+  sh:targetClass ex:Assessment ;
+  sh:property [ sh:path ex:label ; sh:minCount 1 ] ;
+  sh:property [ sh:path ex:assessment_type ; sh:minCount 1 ] ;
+  sh:property [ sh:path ex:score ; sh:minCount 1 ] .
+
+ex:AssertionShape a sh:NodeShape ;
+  sh:targetClass ex:Assertion ;
+  sh:property [ sh:path ex:label ; sh:minCount 1 ] ;
+  sh:property [ sh:path ex:source_ref ; sh:minCount 1 ] .

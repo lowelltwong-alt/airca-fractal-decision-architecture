@@ -1,0 +1,40 @@
+edges:
+  - id: addresses_question
+    source: ViewPosition
+    target: QuestionTopic
+    description: Connects a view or proposal to the question it addresses.
+
+  - id: supports
+    source: Assertion|Assessment
+    target: ViewPosition
+    description: Indicates positive support for a view.
+
+  - id: challenges
+    source: Assertion|Assessment
+    target: ViewPosition
+    description: Indicates a challenge or objection to a view.
+
+  - id: assesses
+    source: Assessment
+    target: QuestionTopic|ViewPosition
+    description: Connects an assessment to the object it evaluates.
+
+  - id: depends_on
+    source: ViewPosition|Assertion
+    target: ViewPosition|Assertion|QuestionTopic
+    description: Indicates an explicit dependency.
+
+  - id: coheres_with
+    source: ViewPosition|Assertion
+    target: ViewPosition|Assertion
+    description: Indicates a positive fit relationship.
+
+  - id: conflicts_with
+    source: ViewPosition|Assertion
+    target: ViewPosition|Assertion
+    description: Indicates a contradiction or high-tension relationship.
+
+  - id: summarizes_state
+    source: CoherenceState
+    target: QuestionTopic|ViewPosition
+    description: Connects a coherence summary to the cluster it represents.

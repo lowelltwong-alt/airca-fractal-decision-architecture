@@ -1,0 +1,22 @@
+extension: secular
+adds_classes:
+  - PolicyRegime
+  - Stakeholder
+  - ControlRequirement
+  - RiskContext
+
+adds_fields:
+  ViewPosition:
+    - stakeholder_scope
+    - policy_context
+  Assertion:
+    - source_ref
+    - standard_reference
+    - control_reference
+  Assessment:
+    - risk_score
+    - impact_level
+
+notes:
+  - The secular extension supports policy, governance, product, and safety use cases.
+  - Standards, controls, and regulatory references should be first-class source anchors.

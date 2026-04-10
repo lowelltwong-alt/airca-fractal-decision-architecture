@@ -1,9 +1,16 @@
 {
+  "artifact_id": "airca.root",
   "title": "AIRCA + Fractal Decision Architecture",
-  "author": {
-    "name": "Lowell Wong"
-  },
   "artifact_type": "concept_repository",
+  "status": "draft",
+  "version": "0.2.0",
+  "created_at": "2026-03-27",
+  "updated_at": "2026-04-08",
+  "summary": "Repository-level metadata for the AIRCA + fractal decision architecture project.",
+  "author": {
+    "name": "Lowell T. Wong",
+    "role": "author"
+  },
   "core_claim": "As AI makes answers cheaper, the scarce resource becomes decision capacity.",
   "concepts": [
     "AIRCA",
@@ -22,8 +29,8 @@
     "Richard Susskind"
   ],
   "attribution": {
-    "AIRCA_emerged_through": "Collaborative process between Alex A. and Lowell Wong",
-    "fractal_extension_by": "Lowell Wong"
+    "airca_emerged_through": "Collaborative process between Alex A. and Lowell T. Wong",
+    "fractal_extension_by": "Lowell T. Wong"
   },
   "original_contribution": [
     "fractal taxonomy",
@@ -32,7 +39,17 @@
     "recursive decision structures that can scale across levels",
     "machine-readable artifact design for governance and interpretation"
   ],
-  "status": "public draft",
-  "version": "0.1.0",
-  "date_created": "2026-03-27"
+  "scope": [
+    "concept repository",
+    "decision architecture",
+    "AI governance",
+    "machine-readable artifacts",
+    "fractal structure"
+  ],
+  "source_docs": [
+    "README.md",
+    "ROADMAP.md",
+    "docs/README.md",
+    "sources-and-lineage.md"
+  ]
 }

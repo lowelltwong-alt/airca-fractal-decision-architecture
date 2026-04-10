@@ -1,0 +1,127 @@
+version: "0.1"
+
+lifecycle_states:
+  - proposed
+  - experimental
+  - active
+  - deprecated
+  - retired
+
+change_types:
+  add:
+    breaking_class: non-breaking
+    required_artifacts:
+      - proposal_doc
+      - examples
+      - validation_report
+      - action_log_entry
+    reviewers:
+      maintainer: required
+      steward: consult
+
+  split:
+    breaking_class: breaking
+    required_artifacts:
+      - ambiguity_analysis
+      - semantic_diff
+      - migration_plan
+      - replacement_links
+      - validation_report
+      - action_log_entry
+    reviewers:
+      maintainer: required
+      steward: required
+      auditor: required
+
+  merge:
+    breaking_class: breaking
+    required_artifacts:
+      - equivalence_justification
+      - semantic_diff
+      - replacement_links
+      - migration_plan
+      - validation_report
+      - action_log_entry
+    reviewers:
+      maintainer: required
+      steward: required
+      auditor: required
+
+  reorder:
+    breaking_class: soft-breaking
+    required_artifacts:
+      - rationale
+      - impact_analysis
+      - validation_report
+      - action_log_entry
+    reviewers:
+      maintainer: required
+      steward: consult
+
+  reweight:
+    breaking_class: soft-breaking
+    required_artifacts:
+      - rationale
+      - behavior_diff
+      - validation_report
+      - action_log_entry
+    reviewers:
+      maintainer: required
+      steward: required
+
+  reinterpret:
+    breaking_class: breaking
+    required_artifacts:
+      - semantic_diff
+      - referent_analysis
+      - migration_plan
+      - validation_report
+      - action_log_entry
+    reviewers:
+      maintainer: required
+      steward: required
+      auditor: required
+
+  remap:
+    breaking_class: soft-breaking
+    required_artifacts:
+      - mapping_rationale
+      - impact_analysis
+      - validation_report
+      - action_log_entry
+    reviewers:
+      maintainer: required
+      steward: required
+
+  deprecate:
+    breaking_class: non-breaking
+    required_artifacts:
+      - deprecation_reason
+      - replacement_link_or_note
+      - deprecation_timeline
+      - action_log_entry
+    reviewers:
+      maintainer: required
+      steward: required
+
+  promote:
+    breaking_class: non-breaking
+    required_artifacts:
+      - completeness_check
+      - validation_report
+      - action_log_entry
+    reviewers:
+      maintainer: required
+      steward: required
+
+  retire:
+    breaking_class: breaking
+    required_artifacts:
+      - usage_audit
+      - tombstone_or_redirect_plan
+      - retirement_notice
+      - action_log_entry
+    reviewers:
+      maintainer: required
+      steward: required
+      auditor: required

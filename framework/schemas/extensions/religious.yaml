@@ -1,0 +1,21 @@
+extension: religious
+adds_classes:
+  - TraditionScope
+  - AuthoritySource
+  - CanonBoundary
+  - DoctrinalCluster
+
+adds_fields:
+  ViewPosition:
+    - tradition
+    - authority_context
+  Assertion:
+    - source_ref
+    - authority_source
+    - canonical_scope
+  Assessment:
+    - doctrinal_weight
+
+notes:
+  - The religious extension keeps the core framework domain-neutral while allowing tradition-scoped views.
+  - Canon boundaries and authority sources should be explicit, not implied.

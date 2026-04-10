@@ -1,11 +1,18 @@
 {
+  "artifact_id": "docs.integrations",
   "title": "Integrations",
-  "node_type": "concept_node",
+  "artifact_type": "concept_node",
   "parent": "docs",
   "concept": "integrations",
   "status": "draft",
-  "version": "0.1.0",
-  "author": "Lowell T. Wong",
+  "version": "0.2.0",
+  "created_at": "2026-03-27",
+  "updated_at": "2026-04-08",
+  "summary": "Concept-node metadata for system-level synthesis, crosswalks, anchors, tags, and machine-readable integration logic.",
+  "author": {
+    "name": "Lowell T. Wong",
+    "role": "author"
+  },
   "scope": [
     "concept crosswalks",
     "system-level synthesis",
@@ -42,5 +49,13 @@
     "Christian decision architecture",
     "knowledge graphs",
     "decision intelligence"
+  ],
+  "source_docs": [
+    "docs/integrations/README.md",
+    "docs/integrations/notes-v1.md",
+    "docs/integrations/lineage.md",
+    "docs/integrations/example-machine-readable-artifact.md",
+    "docs/integrations/machine-readable-artifact-anchors-and-tags.md",
+    "docs/integrations/fractal-artifact-class-naming.md"
   ]
 }
