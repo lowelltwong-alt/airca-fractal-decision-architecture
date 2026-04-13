@@ -1,0 +1,23 @@
+name: airca-publish
+
+on:
+  push:
+    branches:
+      - main
+      - feat/make-airca-usable
+  pull_request:
+
+jobs:
+  publish-example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install package
+        run: pip install -e . pytest
+      - name: Run tests
+        run: pytest
+      - name: Publish example paper
+        run: python -m airca.publish_cli examples/artifacts/architecture-decision.json --output-dir papers/generated
