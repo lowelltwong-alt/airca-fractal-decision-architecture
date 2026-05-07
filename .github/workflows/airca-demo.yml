@@ -1,0 +1,23 @@
+name: airca-demo
+
+on:
+  push:
+    branches:
+      - main
+      - feat/make-airca-usable
+  pull_request:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install package
+        run: pip install -e . pytest
+      - name: Run tests
+        run: pytest
+      - name: Generate demo artifacts
+        run: airca demo --output-dir output

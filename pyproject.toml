@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airca-core"
+version = "0.1.0"
+description = "AI-native decision architecture with machine-readable decision artifacts"
+readme = "START_HERE.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Lowell T. Wong"}
+]
+keywords = ["decision-making", "governance", "ai", "artifacts", "workflow"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = []
+
+[project.scripts]
+airca = "airca.cli:main"
+
+[tool.setuptools]
+packages = ["airca"]
